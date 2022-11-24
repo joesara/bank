@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-6 text-center">
+        <img class="mt-5" src="https://feeds.abplive.com/onecms/images/uploaded-images/2022/07/12/21c46a5efe380d3e1dcf58414c91ab461657634163_original.jpg" alt="">
+
+    </div>
+    <div class="col-6">
+        <form ngSubmit="login()" [formGroup]="loginForm" style="margin-top: 150px ;" class="p-3 border">
+            <div class="mb-3">
+                <label for="acno">Account Number</label>
+                <input formControlName="acno" name="acno" id="acno" type="text" placeholder="Account Number" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="pswd">Password</label>
+                <input formControlName="pswd" name="pswd" id="pswd" type="text" placeholder="Password" class="form-control">
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Login</button> &nbsp;
+                <span>New User ? Click here to <a href="">Register</a> </span>
+            </div>
+            
+        </form>
+    </div>
+</div>
